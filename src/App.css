@@ -1,38 +1,44 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
+:root{
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+    --button-clr:#50ABC8;
+    --text-task-clr:#4b4b4b;
+    --bg-task-clr:#F4F6F7;
+    --bg-white:#f9f8f8;
+    --ff-body:'Cairo', sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.gradient{
+  background-color:#3D3C42; 
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container{
+    box-shadow: 0px -1px 72px -20px rgba(52, 197, 255, 0.75);
 }
-
-.App-link {
-  color: #61dafb;
+.App{
+    font-family: var(--ff-body);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title{
+    color: var(--text-task-clr);
 }
+/* .input-task:focus{
+    border: 1px solid #3B71CA;
+} */
+.todo-btn{
+    background-color: var(--button-clr);
+    box-shadow: rgba(78,206,255,0.75) 0px 4px 20px -5px, rgba(78,206,255,0.75) 0px 6px 14px -5px;
+}
+.Todo{
+    background-color: var(--bg-task-clr);
+}
+.icon{
+    color: var(--button-clr);
+}
+.Todo p.completed{
+    text-decoration: line-through;
+}
+/* .todo-form .input-task:focus{
+    border: 1px solid #50ABC8;
+} */
